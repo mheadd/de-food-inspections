@@ -1,0 +1,12 @@
+{
+  "name": "de-food-inspections",
+  "version": "0.0.3",
+  "description": "Food safety inspection data scraper for the State of Delaware",
+  "main": "index.js",
+  "dependencies": {
+    "request": "latest",
+    "cheerio": "latest"
+  },
+  "author": "Mark Headd <mheadd@gmail.com> (http://civic.io/)",
+  "license": "ISC"
+}
