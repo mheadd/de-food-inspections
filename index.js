@@ -14,18 +14,18 @@ request(URL, function (error, response, body) {
     $=cheerio.load(body, {normalizeWhitespace: true});
 	$('.datagridItem, .datagridAlternatingItem').each(function(i, elem) {
 		
-		// Instantiate an empty array
+		// Instantiate an empty array.
 		var row = [];
 
-		// For each column in the table row, 
+		// For each column in the table row.
 		$(this).children('td').each(function(j, elem) {
 			row.push('"' + $(this).text().replace(/^\s+|\s+$/g,'') + '"');
 		});
 
-		// Join the array for each row using ',' delimeter
+		// Join the array for each row using ',' delimeter.
 		data = row.join(',');
 
-		// Output the row.
+		// Output the comma delimited row.
 		console.log(data);
 	});
   }
