@@ -4,10 +4,14 @@
 
 * Clone this repo.
 * Install dependencies: ```cd de-food-inspections && npm install```
-* Invoke script and pass in URL of web page to scrape:
+* Invoke script and pass in URL of web page to scrape
+
+You can find the URL pertaining to the list of establishments you want to scrape [here](http://www.dhss.delaware.gov/dhss/dph/hsp/Default.aspx). Note the query string parameters on the URL - the example below will scrape data for all establishments that have names beginning with the letter ```A```.
+
+Example:
 
 ```
-~$ node index.js "http://www.dhss.delaware.gov/dhss/dph/hsp/Default.aspx?startLetter=a&stopLetter=a&sort=Establishment"
+~$ node index.js "http://www.dhss.delaware.gov/dhss/dph/hsp/Default.aspx?startLetter=a&stopLetter=a"
 ```
 
 Output:
