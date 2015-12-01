@@ -7,7 +7,7 @@
 * Invoke script and pass in URL of web page to scrape:
 
 ```
-node index.js "http://www.dhss.delaware.gov/dhss/dph/hsp/Default.aspx?startLetter=a&stopLetter=a&sort=Establishment"
+~$ node index.js "http://www.dhss.delaware.gov/dhss/dph/hsp/Default.aspx?startLetter=a&stopLetter=a&sort=Establishment"
 ```
 
 Output:
@@ -27,5 +27,5 @@ Establishments,Address,City,Zip,County,Type,Date,Violations/COS
 To save CSV data, redirect output to a file.
 
 ```
-node index.js [URL] > my-new-file.csv
+~$ node index.js [URL] > my-new-file.csv
 ```
